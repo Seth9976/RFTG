@@ -1,0 +1,9 @@
+// 函数名称: sub_691885
+// 虚拟地址: 0x691885
+// 源二进制: E:/torrent/Cursor/Race/steamapps/common/Race for the Galaxy/Race.exe.bndb
+
+int32_tsub_691885(void* arg1 @ ebp)
+{
+    // 第一条实际指令: return sub_567c70(arg1 - 0x6c) __tailcall
+    return sub_567c70(arg1 - 0x6c) __tailcall
+}

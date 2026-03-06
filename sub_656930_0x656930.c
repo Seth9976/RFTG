@@ -1,0 +1,40 @@
+// 函数名称: sub_656930
+// 虚拟地址: 0x656930
+// 源二进制: E:/torrent/Cursor/Race/steamapps/common/Race for the Galaxy/Race.exe.bndb
+
+void* __convention("regparm")sub_656930(float* arg1)
+{
+    // 第一条实际指令: float var_8 = fconvert.s(fconvert.t(arg1[1]) - fconvert.t(arg1[9]))
+    float var_8 = fconvert.s(fconvert.t(arg1[1]) - fconvert.t(arg1[9]))
+    float var_c = fconvert.s(fconvert.t(*arg1) - fconvert.t(arg1[8]))
+    arg1[8] = fconvert.s(fconvert.t(arg1[8]) + fconvert.t(*arg1))
+    arg1[9] = fconvert.s(fconvert.t(arg1[9]) + fconvert.t(arg1[1]))
+    long double x87_r7_8 = fconvert.t(var_c)
+    long double x87_r5 = fconvert.t(var_8)
+    long double x87_r4_1 = fconvert.t(0.70710676908493042)
+    *arg1 = fconvert.s((x87_r7_8 + x87_r5) * x87_r4_1)
+    arg1[1] = fconvert.s((x87_r5 - x87_r7_8) * x87_r4_1)
+    float var_8_1 = fconvert.s(fconvert.t(arg1[3]) - fconvert.t(arg1[0xb]))
+    float var_c_1 = fconvert.s(fconvert.t(arg1[0xa]) - fconvert.t(arg1[2]))
+    arg1[0xa] = fconvert.s(fconvert.t(arg1[0xa]) + fconvert.t(arg1[2]))
+    arg1[0xb] = fconvert.s(fconvert.t(arg1[0xb]) + fconvert.t(arg1[3]))
+    arg1[2] = fconvert.s(fconvert.t(var_8_1))
+    arg1[3] = fconvert.s(fconvert.t(var_c_1))
+    float var_8_2 = fconvert.s(fconvert.t(arg1[0xc]) - fconvert.t(arg1[4]))
+    float var_c_2 = fconvert.s(fconvert.t(arg1[0xd]) - fconvert.t(arg1[5]))
+    arg1[0xc] = fconvert.s(fconvert.t(arg1[0xc]) + fconvert.t(arg1[4]))
+    arg1[0xd] = fconvert.s(fconvert.t(arg1[0xd]) + fconvert.t(arg1[5]))
+    long double x87_r6_23 = fconvert.t(var_8_2)
+    long double x87_r4_3 = fconvert.t(var_c_2)
+    arg1[4] = fconvert.s((x87_r6_23 - x87_r4_3) * x87_r4_1)
+    arg1[5] = fconvert.s(x87_r4_1 * (x87_r6_23 + x87_r4_3))
+    float var_8_3 = fconvert.s(fconvert.t(arg1[0xe]) - fconvert.t(arg1[6]))
+    float var_c_3 = fconvert.s(fconvert.t(arg1[0xf]) - fconvert.t(arg1[7]))
+    arg1[0xe] = fconvert.s(fconvert.t(arg1[0xe]) + fconvert.t(arg1[6]))
+    arg1[0xf] = fconvert.s(fconvert.t(arg1[0xf]) + fconvert.t(arg1[7]))
+    arg1[6] = fconvert.s(fconvert.t(var_8_3))
+    arg1[7] = fconvert.s(fconvert.t(var_c_3))
+    sub_656880(arg1)
+    sub_656880(&arg1[8])
+    return &arg1[8]
+}
